@@ -183,7 +183,7 @@ link.setAttribute("href", '][m4_ifelse(MOBILEAPP,[],[%SERVICE_ROOT%/browser/%VER
 document.getElementsByTagName("head")[[0]].appendChild(link);
 </script>
 ])
-<!--%BRANDING_CSS%--> <!-- add your logo here -->
+<!-- add your logo here -->
 m4_ifelse(IOSAPP,[true],
   [<link rel="stylesheet" href="Branding/branding.css">])
 m4_ifelse(ANDROIDAPP,[true],
@@ -451,6 +451,6 @@ m4_ifelse(MOBILEAPP,[true],
 
     m4_ifelse(MOBILEAPP,[true],
     [<script src="m4_ifelse(IOSAPP,[true],[Branding/])branding.js"></script>],
-    [<!--%BRANDING_JS%--> <!-- logo onclick handler -->
+    [<!-- logo onclick handler -->
     <!--%CSS_VARIABLES%-->])
 </body></html>
